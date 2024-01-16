@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+<body>
+
+    <header>
+        <a class="header-logo"><b>Estofos</b></a>
+        <nav>
+          <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/sobre">SOBRE</a></li>
+            <li><a href="/contactos">CONTACTOS</a></li>
+          </ul>
+        </nav>
+      </header>
+
+<section class="contactos-section">
+    <div class="container">
+        <h1>Contacte-nos</h1>
+        <p>Se tem perguntas sobre os nossos produtos ou serviços, não hesite em contactar-nos. Estamos sempre disponíveis para ajudar.</p>
+        <div class="contact-info">
+            <h2>Informações de Contato</h2>
+            <ul>
+                <li><strong>Email:</strong> info@estofoscasa.pt</li>
+                <li><strong>Telefone:</strong> +351 123 456 789</li>
+                <li><strong>Endereço:</strong> Rua dos Estofos, 123, Cidade, País</li>
+            </ul>
+        </div>
+        
+        <div class="contact-form">
+            <h2>Envie-nos uma Mensagem</h2>
+            <form action="/send-email" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>&copy; 2024 Estofos Casa. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>    
