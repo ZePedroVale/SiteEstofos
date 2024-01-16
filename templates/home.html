@@ -5,25 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estofos </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 </head>
 <body>
     <header>
-        <h1>Bem-vindo à Estofos </h1>
         <nav>
-            <ul>
-                <li><a href="/">Início</a></li>
-                <li><a href="/sobre">Sobre</a></li>
-                <li><a href="/contacto">Contacto</a></li>
-            </ul>
+          <ul>
+            <li><a href="/">Início</a></li>
+            <li><a href="/sobre">Sobre</a></li>
+            <li><a href="/contacto">Contacto</a></li>
+          </ul>
         </nav>
-    </header>
+        <h1>Bem-vindo </h1>
+      </header>
+
+    <div id="carrosselEstofos" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/image1.jpg" class="d-block w-100" alt="Estofo 1">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/image2.jpg" class="d-block w-100" alt="Estofo 2">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/image3.jpg" class="d-block w-100" alt="Estofo 3">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carrosselEstofos" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carrosselEstofos" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      
     
-    <section>
-        <h2>Nossos Produtos</h2>
-        <p>Aqui você encontra os melhores estofos para a sua casa.</p>
-        <!-- Adicionar mais conteúdo aqui conforme necessário -->
-    </section>
+    <section class="sobre-empresa">
+        <div class="content-wrap">
+          <h2>Sobre a Estofos Casa</h2>
+          <p>A Estofos Casa tem orgulho de oferecer os melhores e mais confortáveis estofos do mercado. Com mais de 20 anos de experiência, nossa missão é proporcionar beleza e conforto para sua casa.</p>
+          <p>Nossa equipe de artesãos experientes trabalha com uma variedade de tecidos e designs para criar peças únicas que complementam qualquer espaço. Visite nosso showroom ou entre em contato para saber mais.</p>
+        </div>
+      </section>
+      
 
     <footer>
         <p>&copy; 2024 Estofos Casa. Todos os direitos reservados.</p>

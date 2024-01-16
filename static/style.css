@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+    border-radius: 0;
+  }
+  
+  .carousel-item img {
+    height: 65vh; 
+    object-fit: cover;
+  }
+  
+  .sobre-empresa {
+    padding: 40px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .sobre-empresa h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .sobre-empresa p {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .content-wrap {
+    min-height: 100%;
+    margin-bottom: -50px; 
+  }
+  
+  footer, .content-wrap:after {
+    height: 50px; 
+    display: block;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .carousel-item {
+    height: 700px; 
+  }
+  
+  .carousel-item img {
+    width: 100%; 
+    height: 700px; 
+    object-fit: cover ; 
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  nav {
+    background-color: #343a40; 
+    color: #fff; 
+    padding: 10px 20px; 
+    text-align: center; 
+  }
+  
+  
+  nav ul {
+    list-style: none; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  
+  nav ul li {
+    margin: 0 15px; 
+  }  
+
+  
