@@ -1,12 +1,107 @@
-body {
-    font-family: 'Arial', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif; 
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.3); 
+  backdrop-filter: blur(5px); 
+  border-radius: 0 0 10px 10px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.header-logo {
+  font-size: 1.5em;
+  color: #333; 
+  text-decoration: none; 
+  padding: 10px 0; 
+}
+
+
+nav {
+  background: transparent;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  margin-left: auto;
+}
+
+
+nav ul li {
+  padding: 0 10px; 
+}
+
+
+nav a {
+  color: #333; 
+  text-decoration: none;
+  font-size: 1em; 
+  transition: color 0.3s ease-in-out;
+}
+
+
+nav a:hover {
+  color: #000; 
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .header-logo {
+    margin-bottom: 10px; 
+    font-size: 3em; 
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-left: 0; 
+    align-items: center; 
+  }
+
+  nav ul li {
+    padding: 5px 0; 
+  }
+
+  nav a {
+  font-size: 0.9em; 
+  }
+  }
+
+  .carousel-item {
+    height: 700px; 
   }
   
-  .navbar {
-    margin-bottom: 20px;
-    border-radius: 1;
+  .carousel-item img {
+    width: 100%; 
+    height: 700px; 
+    object-fit: cover ; 
   }
-  
+
   .carousel-item img {
     height: 65vh; 
     object-fit: cover;
@@ -26,64 +121,26 @@ body {
     text-align: justify;
     margin-bottom: 10px;
   }
-  
-  body, html {
-    height: 100%;
-    margin: 0;
-  }
-  
-  .content-wrap {
-    min-height: 100%;
-    margin-bottom: -50px; 
-  }
-  
-  footer, .content-wrap:after {
-    height: 50px; 
-    display: block;
-  }
-  
+
+
+
+
   footer {
-    background-color: #d2b48c;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .carousel-item {
-    height: 700px; 
-  }
-  
-  .carousel-item img {
-    width: 100%; 
-    height: 700px; 
-    object-fit: cover ; 
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
-  nav {
-    background-color: #d2b48c; 
-    border: #333;
+    background-color: #343a40; 
     color: #fff; 
-    padding: 10px 20px; 
     text-align: center; 
+    padding: 20px 0; 
+    width: 100%; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); 
   }
-  
-  
-  nav ul {
-    list-style: none; 
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
+
+
+  .footer-spacer {
+    height: 50px;
   }
-  
-  nav ul li {
-    margin: 0 15px; 
-  }  
+
 
   
