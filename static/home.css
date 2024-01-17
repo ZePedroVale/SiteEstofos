@@ -163,3 +163,84 @@ nav a:hover {
 .feature p {
     font-weight: bold; /* Opcional: torna o texto 'VER TODOS OS...' em negrito */
 }
+
+
+
+
+.promo-section {
+  background: url('/static/interior.webp') no-repeat center center;
+  background-size: cover; /* ou pode usar 'contain' se não quiser que a imagem seja cortada */
+  background-position: center center; /* Centra a imagem de fundo */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  height: 400px; /* Ajuste de acordo com a altura desejada */
+  display: flex;
+  align-items: center; /* Isto vai centralizar o conteúdo da promoção verticalmente */
+  justify-content: center; 
+}
+.promo-section img {
+  max-width: 100%; /* Define a largura máxima da imagem para 100% do contentor */
+  height: auto; /* Mantém a proporção da imagem */
+  object-fit: contain; /* Ajusta a imagem para o contentor sem cortar */
+}
+
+.promo-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5em;
+}
+
+.promo-section p {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.promo-section .btn {
+  font-weight: bold;
+  background-color: #decba4; /* Cor do botão */
+  border: none;
+}
+
+/* Ajuste para tamanhos de tela menores */
+@media (max-width: 768px) {
+  .promo-section h2 {
+      font-size: 2rem;
+  }
+
+  .promo-section p {
+      font-size: 1.2rem;
+  }
+}
+
+
+.highlights-section .col-md-4 {
+  margin-bottom: 30px; /* Espaçamento entre os itens */
+}
+
+.highlights-section img {
+  width: 100%; /* Garante que a imagem ocupe toda a largura da coluna */
+  height: auto; /* Mantém a proporção da imagem correta */
+  margin-bottom: 15px; /* Espaçamento entre a imagem e o título */
+}
+
+.highlights-section h3 {
+  font-size: 1.5em; /* Tamanho do título */
+  margin-bottom: 10px; /* Espaçamento entre o título e o botão */
+}
+
+.highlights-section .btn-link {
+  font-weight: bold; 
+}
+
+
+equal-img-size {
+  width: 100%; /* Define a largura para preencher o espaço disponível */
+  height: 250px; /* Define uma altura fixa para todas as imagens */
+  object-fit: cover; /* Garante que a imagem cubra a área sem perder a proporção */
+  border-radius: 0.25rem; /* Adiciona bordas arredondadas às imagens (opcional) */
+}
+
+/* Adapte para telas menores */
+@media (max-width: 768px) {
+  .equal-img-size {
+    height: 200px; /* Você pode querer uma altura menor para telas menores */
+  }
+}
